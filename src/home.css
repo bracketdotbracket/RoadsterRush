@@ -1,0 +1,406 @@
+/* Neon Grid: the live rear-view city scene carries the composition. */
+.home-screen .menu-shade {
+  background:
+    linear-gradient(90deg, #030a13d9, #050c1566 30%, transparent 56%),
+    linear-gradient(0deg, #030914b5, transparent 24%);
+}
+.home-screen .topbar {
+  top: 28px;
+  left: 3.1%;
+  right: 2.8%;
+}
+.home-screen .wordmark {
+  font-size: 38px;
+}
+.home-screen .wordmark b {
+  font-size: 11px;
+  letter-spacing: 2.7px;
+}
+.home-screen .icon-button {
+  width: 42px;
+  height: 42px;
+  background: #101c2e5c;
+}
+.home-screen .icon-button:hover {
+  background: #2a405e;
+}
+.home-screen .hero {
+  left: 3.9%;
+  top: 24%;
+  width: min(31vw, 490px);
+  max-width: none;
+}
+.home-screen .hero > .eyebrow,
+.home-screen .hero-sub {
+  display: none;
+}
+.home-screen .hero h1 {
+  font-size: clamp(76px, 7.4vw, 148px);
+  line-height: 0.86;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  margin: 0 0 clamp(30px, 5.8vh, 60px);
+  text-shadow: 0 3px 24px #00000028;
+}
+.home-screen .hero h1 em {
+  color: #d8ff62;
+}
+.home-screen .driver-row {
+  gap: 24px;
+  margin: 0;
+  width: min(100%, 355px);
+  justify-content: space-between;
+}
+.home-screen .name-label {
+  width: 150px;
+}
+.home-screen .name-label > span {
+  display: none;
+}
+.home-screen .name-label input {
+  font-size: 13px;
+  letter-spacing: 1.6px;
+  padding-bottom: 11px;
+}
+.home-screen .colors {
+  gap: 11px;
+  padding-bottom: 11px;
+}
+.home-screen .colors button {
+  width: 17px;
+  height: 17px;
+}
+.home-screen .play-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(100%, 355px);
+  margin-top: 24px;
+}
+.home-screen .play-actions > button {
+  min-height: clamp(48px, 6.7vh, 67px);
+  padding: 0 26px;
+  font-size: 13px;
+  letter-spacing: 1.3px;
+  border-radius: 3px;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+}
+.home-screen .play-actions .start {
+  justify-content: space-between;
+  background: #d8ff62;
+  box-shadow: 0 2px 25px #b6fc2215;
+}
+.home-screen .play-actions .start:hover {
+  background: #e7ff9b;
+  box-shadow: 0 0 26px #c9ff4133;
+}
+.home-screen .play-actions .secondary,
+.home-screen .friends-button {
+  background: #0b172667;
+  border: 1px solid #bdcede60;
+}
+.home-screen .play-actions .secondary:hover,
+.home-screen .friends-button:hover {
+  background: #2b3f5899;
+  border-color: #d7fc70;
+}
+.home-screen .friends-button {
+  gap: 18px;
+}
+.home-screen .friends-button svg {
+  width: 22px;
+  height: 22px;
+}
+.home-screen .friends-button span {
+  font-size: 10px;
+}
+.home-screen .menu-hint {
+  color: #b2c2d0;
+  font-size: 10px;
+  margin-top: 14px;
+}
+.home-screen .track-card {
+  right: 2.8%;
+  bottom: 6.4%;
+  width: clamp(220px, 19vw, 300px);
+  padding: 20px 24px 17px;
+  background: linear-gradient(135deg, #1c2937c9, #0b1322b3);
+  border: 1px solid #b7cce340;
+  backdrop-filter: blur(16px);
+}
+.home-screen .track-card-header {
+  display: none;
+}
+.home-screen .track-details {
+  padding: 0 0 17px;
+  justify-content: space-between;
+  gap: 22px;
+}
+.home-screen .track-details h2 {
+  font-size: 29px;
+  line-height: 0.97;
+  letter-spacing: 0.4px;
+}
+.home-screen .track-details p {
+  display: none;
+}
+.home-screen .track-details .minimap {
+  width: 91px;
+  height: 75px;
+  margin: 0;
+  color: #eff7ff;
+}
+.home-screen .track-facts {
+  padding-top: 13px;
+  font-size: 9px;
+  color: #d3dee8;
+}
+.home-screen .track-facts strong {
+  font-size: 23px;
+}
+.home-screen .track-facts > span:first-child {
+  display: none;
+}
+.home-screen .menu-footer {
+  bottom: 20px;
+  left: 3.9%;
+  right: 2.8%;
+}
+.home-screen .menu-footer > span {
+  opacity: 0.65;
+}
+
+@media (min-aspect-ratio: 2/1) {
+  .home-screen .hero {
+    top: 20%;
+  }
+  .home-screen .hero h1 {
+    font-size: min(7.1vw, 21vh);
+    margin-bottom: 3.6vh;
+  }
+  .home-screen .play-actions {
+    margin-top: 16px;
+    gap: 8px;
+  }
+}
+@media (max-aspect-ratio: 5/4) and (min-width: 751px) {
+  .home-screen .hero {
+    top: 18%;
+    width: 43vw;
+  }
+  .home-screen .hero h1 {
+    font-size: 10.4vw;
+  }
+  .home-screen .track-card {
+    bottom: 7%;
+    width: 260px;
+  }
+}
+@media (max-height: 720px) and (min-width: 751px) {
+  .home-screen .hero {
+    top: 20%;
+  }
+  .home-screen .hero h1 {
+    font-size: min(7.5vw, 17vh);
+    margin-bottom: 24px;
+  }
+  .home-screen .play-actions {
+    margin-top: 18px;
+    gap: 8px;
+  }
+  .home-screen .play-actions > button {
+    min-height: 45px;
+    font-size: 11px;
+  }
+  .home-screen .menu-hint {
+    display: none;
+  }
+  .home-screen .track-card {
+    bottom: 10%;
+  }
+  .home-screen .topbar {
+    top: 17px;
+  }
+}
+@media (max-width: 750px) {
+  .home-screen .hero {
+    top: 17%;
+    left: 6%;
+    width: 78%;
+  }
+  .home-screen .hero h1 {
+    font-size: clamp(72px, 15vw, 100px);
+    margin-bottom: 27px;
+  }
+  .home-screen .driver-row,
+  .home-screen .play-actions {
+    max-width: 330px;
+  }
+  .home-screen .play-actions > button {
+    min-height: 49px;
+    font-size: 12px;
+  }
+  .home-screen .menu-shade {
+    background: linear-gradient(90deg, #030913dd, #050c1588 60%, #050c1533);
+  }
+  .home-screen .topbar {
+    left: 6%;
+    right: 6%;
+    top: 18px;
+  }
+  .home-screen .wordmark {
+    font-size: 32px;
+  }
+  .home-screen .icon-button {
+    width: 34px;
+    height: 34px;
+  }
+  .home-screen .menu-footer {
+    left: 6%;
+    right: 6%;
+    bottom: 25px;
+  }
+}
+@media (max-height: 520px) {
+  .home-screen .hero {
+    top: 19%;
+  }
+  .home-screen .hero h1 {
+    font-size: 13vh;
+    margin-bottom: 16px;
+  }
+  .home-screen .play-actions {
+    margin-top: 12px;
+    gap: 6px;
+  }
+  .home-screen .play-actions > button {
+    min-height: 36px;
+  }
+  .home-screen .menu-hint,
+  .home-screen .menu-footer > span {
+    display: none;
+  }
+  .home-screen .driver-row {
+    gap: 12px;
+  }
+  .home-screen .colors {
+    gap: 7px;
+  }
+}
+
+/* Circuit selection stays visible before starting or creating a room. */
+.home-screen .track-card {
+  width: clamp(290px, 24vw, 370px);
+}
+.home-screen .track-card-header {
+  display: flex;
+  margin-bottom: 16px;
+  font-size: 10px;
+}
+.circuit-picker {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 20px;
+}
+.circuit-picker button {
+  flex: 1;
+  padding: 12px 9px;
+  min-height: 48px;
+  border: 1px solid #9fb4c644;
+  border-radius: 3px;
+  background: #0d1b2dcc;
+  color: #cfdae5;
+  font-size: 12px;
+  text-align: left;
+  transition:
+    background 0.15s,
+    border-color 0.15s;
+}
+.circuit-picker button span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  opacity: 0.65;
+}
+.circuit-picker button[aria-pressed='true'] {
+  border-color: var(--circuit-accent);
+  background: #293b4c;
+  color: var(--circuit-accent);
+}
+.circuit-picker button:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+.circuit-picker button:hover:not(:disabled) {
+  background: #35495d;
+}
+.circuit-picker button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+.home-screen .track-details .circuit-tag {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 1.4px;
+  margin: 0 0 10px;
+  color: #c3d4df;
+}
+.home-screen .circuit-description {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #c3d4df;
+  margin: 0 0 14px;
+}
+.home-screen .track-facts > span:first-child {
+  display: inline;
+}
+.compact-circuit-picker {
+  display: none;
+}
+.track-starport.home-screen .hero h1 em {
+  color: #ffbd7b;
+}
+.track-starport.home-screen .play-actions .start {
+  background: #ffbd7b;
+}
+.track-starport.home-screen .menu-shade {
+  background:
+    linear-gradient(90deg, #141a25e6, #141a2566 32%, transparent 60%),
+    linear-gradient(0deg, #101724a6, transparent 30%);
+}
+@media (max-width: 750px) {
+  .compact-circuit-picker {
+    display: block;
+    max-width: 330px;
+    margin-top: 14px;
+  }
+  .compact-circuit-picker .circuit-picker {
+    margin-bottom: 0;
+  }
+  .compact-circuit-picker button {
+    min-height: 36px;
+    padding: 7px 9px;
+  }
+  .compact-circuit-picker button span {
+    display: none;
+  }
+  .home-screen .track-card {
+    display: none;
+  }
+}
+@media (max-height: 620px) and (min-width: 751px) {
+  .home-screen .track-card {
+    padding: 14px 18px;
+  }
+  .home-screen .track-card .circuit-description {
+    display: none;
+  }
+  .home-screen .track-card-header {
+    margin-bottom: 10px;
+  }
+  .home-screen .track-card .circuit-picker {
+    margin-bottom: 14px;
+  }
+}
