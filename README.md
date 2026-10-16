@@ -6,6 +6,7 @@
 [![Roadster Rush cover artwork: rear-view Roadsters on a rain-lit Neon City starting grid.](docs/images/roadster-rush-cover.png)](https://roadsterrush.xyz/)
 
 <p align="center"><sub>Neon City · Cover artwork from early visual development. This handbook describes v0.5.0.</sub></p>
+play at : https://roadsterrush.xyz
 
 # Beyond grip.
 
